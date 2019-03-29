@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Breakable
   - Unbreakable
+  - Goalkeeper
   layers:
   - Default
   - TransparentFX

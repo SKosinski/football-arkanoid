@@ -7,8 +7,11 @@ public class Block : MonoBehaviour
 {
     // config params
     [SerializeField] AudioClip breakSound;
+    [SerializeField] AudioClip saveSound;
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] Sprite[] hitSprites;
+    [SerializeField] Sprite breakableSprite;
+    [SerializeField] GameObject[] goalkeepers;
 
     // cached reference
     Level level;
@@ -28,10 +31,43 @@ public class Block : MonoBehaviour
             timesHit++;
             int maxHits = hitSprites.Length + 1;
             if (timesHit >= maxHits)
+            {
                 DestroyBlock();
+                CheckGoalkeepers();
+            }
+
             else
                 ShowNextHitSprite();
         }
+        if (tag == "Goalkeeper")
+        {
+            if (FindObjectOfType<Level>().numberOfBlocks>2)
+            {
+                AudioSource.PlayClipAtPoint(saveSound, Camera.main.transform.position);
+            }
+
+            else
+            {
+                DestroyBlock();
+            }
+        }
+    }
+
+    private void CheckGoalkeepers()
+    {
+        if (FindObjectOfType<Level>().numberOfBlocks <= 2)
+        {
+                ShowBreakableSprite();
+        }
+    }
+
+    private void ShowBreakableSprite()
+    {
+        foreach (GameObject goalkeeper in goalkeepers)
+        {
+            goalkeeper.GetComponent<SpriteRenderer>().sprite = goalkeeper.GetComponent<Block>().breakableSprite;
+        }
+
     }
 
     private void ShowNextHitSprite()
@@ -57,12 +93,13 @@ public class Block : MonoBehaviour
     private void Start()
     {
         CountBreakableBlocks();
+        goalkeepers = GameObject.FindGameObjectsWithTag("Goalkeeper");
     }
 
     private void CountBreakableBlocks()
     {
         level = FindObjectOfType<Level>();
-        if (tag == "Breakable")
+        if (tag == "Breakable" || tag=="Goalkeeper")
             level.CountBlocks();
     }
 

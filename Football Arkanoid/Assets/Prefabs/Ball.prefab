@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79efea814e900ae45b3241ed69a67488, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fbe1626e0c9c2f34bbe40b3710c10d14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,10 +136,8 @@ MonoBehaviour:
   pushX: 2
   pushY: 10
   ballSounds:
-  - {fileID: 8300000, guid: 5dda029b0201b9a45ad7de3c6c59b667, type: 3}
-  - {fileID: 8300000, guid: 75301860474a182498a3206fcd630257, type: 3}
-  - {fileID: 8300000, guid: 5567387b683ffc842a55627150ba0817, type: 3}
-  - {fileID: 8300000, guid: 8e6146337ada8754bbc5560eff328c12, type: 3}
+  - {fileID: 8300000, guid: cdfe48fe3743c9e4b9d596216eef0942, type: 3}
+  randomFactor: 0.1
 --- !u!82 &2063455180
 AudioSource:
   m_ObjectHideFlags: 0

@@ -23,9 +23,5 @@ public class Level : MonoBehaviour
     public void BrokenBlock()
     {
         numberOfBlocks--;
-        if (numberOfBlocks == 0)
-        {
-            sceneLoader.LoadNextScene();
-        }
     }
 }
