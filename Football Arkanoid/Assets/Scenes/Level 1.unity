@@ -587,21 +587,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785073251147932030, guid: f67ac213cc1b8814da751f3f0164b2b8,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 6785073251147932030, guid: f67ac213cc1b8814da751f3f0164b2b8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6785073251147932030, guid: f67ac213cc1b8814da751f3f0164b2b8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6785073251147932030, guid: f67ac213cc1b8814da751f3f0164b2b8,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -735,6 +720,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Status
       objectReference: {fileID: 0}
+    - target: {fileID: 725319734, guid: b63fbecf7f593b841806e6609d71b7da, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 725319734, guid: b63fbecf7f593b841806e6609d71b7da, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1436576136481095082, guid: b63fbecf7f593b841806e6609d71b7da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -790,11 +783,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1436576136481095083, guid: b63fbecf7f593b841806e6609d71b7da,
-        type: 3}
-      propertyPath: gameSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1436576138132395199, guid: b63fbecf7f593b841806e6609d71b7da,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -823,21 +811,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554746911553490485, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.756
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554746911553490485, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.838
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554746911553490485, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1554746911553490485, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111,
         type: 3}
@@ -902,7 +875,7 @@ PrefabInstance:
     - target: {fileID: 1554746911553490484, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111,
         type: 3}
       propertyPath: randomFactor
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2063455180, guid: dbc40a6e7b1ed2d44bf8e6bc9858b111, type: 3}
       propertyPath: MinDistance

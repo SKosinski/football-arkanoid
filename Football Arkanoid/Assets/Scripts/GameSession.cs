@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
@@ -11,8 +11,10 @@ public class GameSession : MonoBehaviour
 
     //state variables
     [SerializeField] public int currentScore = 0;
+    [SerializeField] public int currentLifes = 3;
     [SerializeField] int scorePerBlockDestroyed = 50;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI lifesText;
     [SerializeField] bool isAutoPlayEnabled;
 
     private void Awake()
@@ -31,7 +33,8 @@ public class GameSession : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = currentScore.ToString();
+        scoreText.text = "Score: " + currentScore.ToString();
+        lifesText.text = "Lifes: " + currentLifes.ToString();
     }
     
     // Update is called once per frame
@@ -43,7 +46,18 @@ public class GameSession : MonoBehaviour
     public void AddToScore()
     {
         currentScore += scorePerBlockDestroyed;
-        scoreText.text = currentScore.ToString();
+        scoreText.text = "Score: " + currentScore.ToString();
+    }
+
+    public void TakeALife()
+    {
+        if (currentLifes <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
+            return;
+        }
+        currentLifes--;
+        lifesText.text = "Lifes: " + currentLifes.ToString();
     }
 
     public void ResetGame()

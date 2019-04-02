@@ -392,11 +392,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8088826894362067554, guid: 74385fc1b47c095448f1b0bd982e543f,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1900
-      objectReference: {fileID: 0}
     - target: {fileID: 8088826894362067555, guid: 74385fc1b47c095448f1b0bd982e543f,
         type: 3}
       propertyPath: m_Sprite
@@ -407,16 +402,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Play Again Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8088826894170960678, guid: 74385fc1b47c095448f1b0bd982e543f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -227
-      objectReference: {fileID: 0}
-    - target: {fileID: 8088826894170960678, guid: 74385fc1b47c095448f1b0bd982e543f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -335
       objectReference: {fileID: 0}
     - target: {fileID: 8088826894170960679, guid: 74385fc1b47c095448f1b0bd982e543f,
         type: 3}
@@ -557,6 +542,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278364160
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088826894170960678, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -227
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088826894170960678, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088826894362067554, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088826895390950181, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1300759825}
+    - target: {fileID: 8088826895390950181, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74385fc1b47c095448f1b0bd982e543f, type: 3}

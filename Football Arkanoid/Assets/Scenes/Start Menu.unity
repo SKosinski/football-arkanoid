@@ -595,5 +595,15 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8088826895390950181, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 414793044}
+    - target: {fileID: 8088826895390950181, guid: 74385fc1b47c095448f1b0bd982e543f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74385fc1b47c095448f1b0bd982e543f, type: 3}

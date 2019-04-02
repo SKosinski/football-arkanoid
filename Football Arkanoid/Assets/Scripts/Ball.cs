@@ -65,4 +65,9 @@ public class Ball : MonoBehaviour
         }
 
     }
+
+    public void ResetPos()
+    {
+        hasStarted = false;
+    }
 }
