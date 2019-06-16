@@ -43,7 +43,7 @@ public class Block : MonoBehaviour
         {
             if (FindObjectOfType<Level>().numberOfBlocks>2)
             {
-                AudioSource.PlayClipAtPoint(saveSound, Camera.main.transform.position);
+                AudioSource.PlayClipAtPoint(saveSound, Camera.main.transform.position, 0.1f);
             }
 
             else
@@ -82,7 +82,7 @@ public class Block : MonoBehaviour
     private void DestroyBlock()
     {
 
-        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
+        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position, 0.1f);
         Destroy(gameObject);
         level.BrokenBlock();
         FindObjectOfType<GameSession>().AddToScore();

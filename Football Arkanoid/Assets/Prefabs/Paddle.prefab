@@ -128,8 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
   screenHeighIntUnits: 12
-  minX: -1
-  maxX: 17
+  minX: 0
+  maxX: 16
   gameSession: {fileID: 0}
   ball: {fileID: 0}
 --- !u!82 &203108990
@@ -144,7 +144,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 59c7407e78d546149a837c9446708693, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
